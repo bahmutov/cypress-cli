@@ -1,4 +1,5 @@
 #!/usr/bin/env node
 require("coffee-script/register")
 
-require("../lib/cli.coffee")()
+// log deprecation then do cli tools
+require("../lib/deprecation")(require("../lib/cli"))
